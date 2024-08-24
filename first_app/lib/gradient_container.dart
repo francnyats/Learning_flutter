@@ -1,3 +1,4 @@
+import 'package:first_app/dice_roller.dart';
 import 'package:flutter/material.dart';
 
 const startAlignment = Alignment.topLeft;
@@ -26,7 +27,7 @@ const endAlignment = Alignment.bottomRight;
 //     );
 //   }
 // }
-
+// stateful, where data in a widget may change internally
 class GradientContainer extends StatelessWidget {
   const GradientContainer(
       {super.key, required this.colors}); //const allows for optimization
@@ -43,16 +44,15 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: Center(
-        child: Image.asset(
-          'assets/images/dice-images/dice-2.png',
-          width: 200,
-        ),
+      child: const Center(
+        child: DiceRoller(),
       ),
     );
   }
 }
 
+
+// Types of buttons: elevated, outlined, text button
 
 // dynamic variable, undefined even by type
 // 'final' and 'const' variable
