@@ -30,6 +30,13 @@ class MyApp extends StatelessWidget {
                     padding: const EdgeInsets.all(7),
                     alignment: Alignment.centerLeft,
                     decoration: const BoxDecoration(
+
+                        //....
+
+                        ////.....
+                        ///
+                        ///List view tile
+                        ///
                         shape: BoxShape.circle,
                         // borderRadius: BorderRadius.circular(5),
                         color: Color.fromARGB(255, 238, 248, 243)),

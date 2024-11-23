@@ -8,16 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:first_app/gradient_container.dart';
+import 'package:login_page/main.dart';
 
-const List<Color> colors = [
-  Color.fromARGB(255, 59, 16, 133),
-  Colors.deepPurple,
-];
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const GradientContainer(colors: colors));
+    await tester.pumpWidget(const MyApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
